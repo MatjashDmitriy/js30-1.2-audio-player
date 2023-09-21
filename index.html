@@ -11,12 +11,50 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.jpg">
 </head>
 <body>
-    <div class="wrapper" style="background-image: url(./assets/covers/cover2.jpg);">
+    <div class="wrapper" style="background-image: url(./assets/covers/cover1.jpg);">
       <div class="audio-player">
-            <img src="./assets/covers/cover2.jpg" class="cover" alt="cover" >
+            <img src="./assets/covers/cover1.jpg" class="cover" alt="cover">
+
             <h1 class="track-title">Sanctuary</h1>
             <span class="artist-name">Joji</span>
+
+            <div class="timeline-slider">
+                    <div class="timeline">
+                        <small class="time">0:00</small>
+                        <small class="fulltime">3:00</small>
+                    </div>
+                    <div class="range-slider">
+                        <input type="range" min="0" max="100" value="0" class="slider">
+                        <div class="slider-thumb"></div>
+                        <div class="progress"></div>
+                    </div>
+            </div>
+
+            <div class="volume-slider">
+                    <div class="volume-icon">
+                        <span class="material-symbols-outlined">&#128265;</span>
+                    </div>
+                    <div class="range-slider">
+                        <input type="range" min="0" max="100" value="50" class="slider">
+                        <div class="progress"></div>
+                    </div>
+            </div>
+
+            <div class="controls">
+                    <button class="btn" id="btnPrev">
+                        <span class="material-symbols-outlined">&#10594;</span>
+                    </button>
+
+                    <button class="btn btn-main" id="mainPlayBtn">
+                        <span class="material-symbols-outlined">&#9654;</span>
+                    </button>
+
+                    <button class="btn" id="btnNext">
+                        <span class="material-symbols-outlined">&#10596;</span>
+                    </button>
+            </div>
       </div>
+      
     </div>
     
     <footer>
