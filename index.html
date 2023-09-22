@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Joji-player</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.jpg">
 </head>
 <body>
+    <div class="wrapper" style="background-image: url(./assets/covers/cover1.jpg);">
+      <div class="audio-player">
+            <img src="./assets/covers/cover1.jpg" class="cover" alt="cover">
+
+            <h1 class="track-title">Sanctuary</h1>
+            <span class="artist-name">Joji</span>
+
+            <div class="timeline-slider">
+                    <div class="timeline">
+                        <small class="time">0:00</small>
+                        <small class="fulltime">3:00</small>
+                    </div>
+                    <div class="range-slider">
+                        <input type="range" min="0" max="100" value="0" class="slider">
+                        <div class="slider-thumb"></div>
+                        <div class="progress"></div>
+                    </div>
+            </div>
+
+            <div class="volume-slider">
+                    <div class="volume-icon">
+                        <span class="material-symbols-outlined">&#128265;</span>
+                    </div>
+                    <div class="range-slider">
+                        <input type="range" min="0" max="100" value="50" class="slider">
+                        <div class="progress"></div>
+                    </div>
+            </div>
+
+            <div class="controls">
+                    <button class="btn" id="btnPrev">
+                        <span class="material-symbols-outlined">&#171;</span>
+                    </button>
+
+                    <button class="btn btn-main" id="mainPlayBtn">
+                        <span class="material-symbols-outlined">&#9654;</span>
+                    </button>
+
+                    <button class="btn" id="btnNext">
+                        <span class="material-symbols-outlined">&#187;</span>
+                    </button>
+            </div>
+      </div>
+      
+    </div>
     
+    <footer>
+        <span class="rs-logo"><a href="https://rs.school/" target="_blank"><img src="./assets/rs-logo.svg" alt="rs-logo" style="border-radius: 50%;"></a></span>
+        <span class="year">2023</span>
+        <span class="gitHub-link"><a href="https://github.com/MatjashDmitriy" target="_blank">MatjashDmitriy</a></span>
+    </footer>
+    <audio id="audio" hidden>
+        <source src="./assets/tracks/Sanctuary.mp3" />
+    </audio>
+    <script src="script.js"></script>
 </body>
 </html>
