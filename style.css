@@ -39,6 +39,19 @@ footer{
 
 .rs-logo{
     margin-top: 5px;
+    transition: .5s;
+}
+
+.rs-logo:hover{
+    transform: scale(0.8);
+}
+
+.gitHub-link{
+    transition: .5s;
+}
+
+.gitHub-link:hover{
+    transform: scale(0.9);
 }
 
 .year{
